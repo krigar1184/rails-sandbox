@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks: 
+  - name: install ruby
+    apt:
+      name: ruby-full
+      state: latest
+      update_cache: yes
